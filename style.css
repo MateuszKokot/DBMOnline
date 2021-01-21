@@ -1,0 +1,330 @@
+.bodydiv
+{
+    font-family: Comfortaa;
+    font-weight: 700;
+    text-align: center;
+    color: aliceblue;
+}
+
+.topbar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 82%;
+    height: 13%;
+
+    background-color: #1976d3;
+}
+
+.leftbar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 18%;
+    height: 87%;
+    overflow: scroll;
+    background-color: #1b232e;
+
+}
+
+
+.leftbar::-webkit-scrollbar {
+    width: 20px;
+    height: 100%;
+}
+
+.leftbar::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    background-color: #3ad47a;
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.leftbar::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.leftbar::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.leftbar::-webkit-scrollbar-thumb:hover {
+
+}
+
+.mainbar
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 82%;
+    height: 87%;
+
+    overflow: hidden;
+    background-color: #25313f;
+}
+
+.logobar
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18%;
+    height: 13%;
+
+    background-color: #25313f;
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+
+}
+
+.tableListItem
+{
+
+    width: 80%;
+    height: 5%;
+    background-color: #3ad47a;
+    margin: 5% 5% 5% 10%;
+    /*overflow: hidden;*/
+
+    font-family: Comfortaa;
+    font-weight: 700;
+    line-height: 4.4vh;
+    font-size: 2.5vh;
+    text-align: center;
+    color: aliceblue;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    z-index: 8;
+}
+
+.tableListItem:hover
+{
+    animation-name: tableListItem;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tableListItem {
+    0% {width: 80%; margin: 5% 5% 5% 10%;}
+    100% {width: 90%; margin: 5% 5% 5% 5%;}
+}
+.tableLabel
+{
+    position: absolute;
+    top: 5vh;
+    left: 11vh;
+    font-weight: 500;
+    line-height: 4vh;
+    font-size: 4vh;
+}
+
+.tableDiv
+{
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+    width: 90%;
+    height: 80%;
+    /*display: -webkit-inline-box;*/
+    display: flex;
+    padding: 10px;
+
+    border-style: none;
+    border-radius: 10px;
+
+    font-weight: 500;
+    line-height: 4.4vh;
+    font-size: 1.5vh;
+
+
+    overflow: auto;
+
+}
+
+.tableDiv::-webkit-scrollbar
+{
+    /*width: 20px;*/
+    /*height: 100%;*/
+    background-color: #1b232e;
+}
+
+.tableDiv::-webkit-scrollbar-thumb
+{
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    background-color: #3ad47a;
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+    inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.tableDiv::-webkit-scrollbar-button
+{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.tableDiv::-webkit-scrollbar-corner
+{
+    background-color: transparent;
+}
+.tableDiv::-webkit-scrollbar:hover
+{
+
+}
+
+
+.column
+{
+    display: table;
+    min-width: 50px;
+
+    background-color: #1b232e;
+}
+
+#column0
+{
+    background-color: tomato;
+}
+
+.rowOper
+{
+    display: flex;
+    width: 100%;
+    height: 36px;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+}
+
+.row
+{
+    display: grid;
+    width: 100%;
+    height: 36px;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+}
+
+.bigrow
+{
+    height: 72px;
+}
+
+.heder
+{
+
+}
+
+.cell
+{
+
+}
+/*.cell:hover*/
+/*{*/
+/*    background-color: #1976d3;*/
+/*    cursor: pointer;*/
+/*}*/
+
+.operationButton
+{
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin: 5px 5px 5px 5px;
+
+}
+
+.operationButton:hover
+{
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    margin: 0px 0px 0px 0px;
+}
+
+.delete
+{
+    background-image: url("images/delete.png");
+    background-size: contain;
+    background-position: center;
+}
+.delete:hover
+{
+    background-image: url("images/delete-blue.png");
+}
+.edit
+{
+    background-image: url("images/edit.png");
+    background-size: contain;
+    background-position: center;
+}
+.edit:hover
+{
+    background-image: url("images/edit-blue.png");
+}
+
+.add
+{
+    background-image: url("images/add.png");
+    background-size: contain;
+    background-position: center;
+}
+.add:hover
+{
+    background-image: url("images/add-blue.png");
+}
+
+.inputtext
+{
+    width: 100%;
+    height: 100%;
+}
+
+.inputedit
+{
+}
+
+.ok
+{
+    background-image: url("images/ok-green.png");
+    background-size: contain;
+    background-position: center;
+}
+.ok:hover
+{
+
+}
+
+.cancel
+{
+    background-image: url("images/no-red.png");
+    background-size: contain;
+    background-position: center;
+}
+.cancel:hover
+{
+
+}
+
+.hidden
+{
+    display: none;
+}
